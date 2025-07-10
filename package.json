@@ -1,0 +1,7 @@
+{
+  "name": "my-cloud-function",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",  // optional, only if using ES modules
+  "dependencies": {}
+}
