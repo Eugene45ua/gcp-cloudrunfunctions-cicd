@@ -4,6 +4,6 @@
 
 
 exports.helloWorld = (req, res) => {
-  const message="<font color='blue'>СloudRunFunction from GCP by Eugene!</font><br><b>App Version 1.03</b>";
+  const message="<font color='blue'>СloudRunFunction from GCP by Eugene!</font><br><b>App Version 1.04</b>";
   res.status(200).send(message);
 };
