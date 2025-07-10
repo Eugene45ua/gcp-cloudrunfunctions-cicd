@@ -22,9 +22,12 @@ steps:
   - --entry-point=$_ENTRY_POINT
   id: DEPLOY
 
+options:
+  logging: NONE
+
 substitutions:
     _FUNCTION_PROJECT : eugene-dev
     _FUNCTION_NAME    : my-nodejs-app
     _FUNCTION_REGION  : europe-west1
     _FUNCTION_RUNTIME : nodejs22
-    _ENTRY_POINT      : helloHttp
+    _ENTRY_POINT      : helloWorld
