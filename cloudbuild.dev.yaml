@@ -23,7 +23,7 @@ steps:
   id: DEPLOY
 
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY
 
 substitutions:
     _FUNCTION_PROJECT : eugene-dev
