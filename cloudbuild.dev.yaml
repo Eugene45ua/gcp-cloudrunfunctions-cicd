@@ -20,11 +20,15 @@ steps:
   - --runtime=$_FUNCTION_RUNTIME
   - --project=$_FUNCTION_PROJECT
   - --entry-point=$_ENTRY_POINT
+  - --no-gen2
   id: DEPLOY
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 substitutions:
-    _FUNCTION_PROJECT : eugene-dev
+    _FUNCTION_PROJECT : eugene-dev-465515
     _FUNCTION_NAME    : my-nodejs-app
     _FUNCTION_REGION  : europe-west1
-    _FUNCTION_RUNTIME : nodejs22
+    _FUNCTION_RUNTIME : nodejs20
     _ENTRY_POINT      : helloWorld
